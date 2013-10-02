@@ -14,6 +14,9 @@
 		</author>
 	</authors>
 	<releases>
+		<release version="0.3" date="2013-10-02" min="2.3.3" >
+			- Обновление перевода для версии 2.3.3.
+		</release>
 		<release version="0.2" date="2012-12-10" min="2.3.1" >
 			- Обновление перевода для версии 2.3.1.
 		</release>
