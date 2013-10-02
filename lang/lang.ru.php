@@ -7,7 +7,7 @@
 			'email' => 'info@alexbirukov.ru',
 			'website' => 'http://alexbirukov.ru'
 		),
-		'release-date' => '2012-12-10'
+		'release-date' => '2013-10-02'
 	);
 
 	/**
@@ -162,9 +162,6 @@
 		'An Event with the name %s already exists' => 
 		'Событие с именем %s уже существует',
 
-		'An email containing a customised login link has been sent. It will expire in 2 hours.' => 
-		'Письмо содержащее ссылку для входа было отправлено. Срок действия ссылки истекает через два часа.',
-
 		'An empty result will be returned when this parameter does not have a value.' => 
 		'Если данный параметр не имеет значения будет возвращен пустой результат.',
 
@@ -314,9 +311,6 @@
 
 		'Children' => 
 		'Потомок',
-
-		'Click to expand or collapse a field.' => 
-		'Кликните для разворачинвания/сворачивания поля.',
 
 		'Confirm Password' => 
 		'Подтвердите пароль',
@@ -492,9 +486,6 @@
 		'Disabled' => 
 		'Выключено',
 
-		'Double click to expand or collapse all fields.' => 
-		'Кликните два раза для разворачинвания/сворачивания всех полей.',
-
 		'Dynamic Values' => 
 		'Динамические значения',
 
@@ -563,9 +554,6 @@
 
 		'Enforced type `%1$s` for argument `$%2$s` does not match any known variable types.' => 
 		'Указаный тип `%1$s` для аргумента `$%2$s` не совпадает ни с одним известным типом данных.',
-
-		'Enter your email address to be sent further instructions for logging in.' => 
-		'Укажите свой email для получения дальнейших инстукций.',
 
 		'Entries' => 
 		'Записи',
@@ -1359,9 +1347,6 @@
 		'There is already a field of type %s. There can only be one per section.' => 
 		'Поле типа %s уже существует. В разделе возможно наличие только одного поля такого типа.',
 
-		'There was a problem locating your account. Please check that you are using the correct email address.' => 
-		'Ваш профиль не найден. Пожалуйста, убедитесь в правильности введенного адреса email.',
-
 		'There was a problem whilst attempting to establish a database connection. Please check all connection information is correct.' => 
 		'Ошибка возникла при попытке соединения с базой данных. Проверьте параметры подключения к базе данных.',
 
@@ -1827,8 +1812,91 @@
 		'‘%s’ is a required field.' => 
 		'Поле ‘%s’ обязательно для заполнения.',
 
+		// Obsolete
+
+		'An email containing a customised login link has been sent. It will expire in 2 hours.' => 
+		'Письмо содержащее ссылку для входа было отправлено. Срок действия ссылки истекает через два часа.',
+
+		'Click to expand or collapse a field.' => 
+		'Кликните для разворачинвания/сворачивания поля.',
+
+		'Double click to expand or collapse all fields.' => 
+		'Кликните два раза для разворачинвания/сворачивания всех полей.',
+
+		'Enter your email address to be sent further instructions for logging in.' => 
+		'Укажите свой email для получения дальнейших инстукций.',
+
+		'There was a problem locating your account. Please check that you are using the correct email address.' => 
+		'Ваш профиль не найден. Пожалуйста, убедитесь в правильности введенного адреса email.',
+
+		'unnamed' => 
+		'без названия',
+
+		'Expand all fields' => 
+		'Развернуть все поля',
+
+		'Collapse all fields' => 
+		'Свернуть все поля',
+
 		'Sections' => 
 		false,
+
+		'Last modified on %s' => 
+		'Последнее изменение %s',
+
+		'An email containing a customised login link has been sent to %s. It will expire in 2 hours.' => 
+		'Письмо, содержащее ссылку для авторизации было отправлено на %s. Ссылка для авторизации будет действительна в течение 2 часов.',
+
+		'Enter your email address or username to be sent further instructions for logging in.' => 
+		'Укажите свой email или имя пользователя, чтобы получить инструкции по входу в систему.',
+
+		'Email Address or Username' => 
+		'Адрес эл. посты или имя пользователя',
+
+		'Unfortunately no account was found using this information.' => 
+		'К сожалению, не найдено ни одной учётной записи, которая бы соответствовала указанным данным.',
+
+		'Linked to %s in' => 
+		'Ссылается на %s в',
+
+		'Links in %s' => 
+		'Ссылок в %s',
+
+		'%d entries' => 
+		'%d записей',
+
+		'Show more entries' => 
+		'Показать больше записей',
+
+		'No links in %s' => 
+		'Нет ссылок в %s',
+
+		'Show Associations' => 
+		'Показать связанные',
+
+		'Manager' => 
+		'Менеджер',
+
+		'Symphony Extension Missing Error' => 
+		'Ошибка поиска расширения',
+
+		'This error occurred whilst attempting to resolve the 404 page for the original request.' => 
+		'Данная ошибка возникает в результате получения ответа 404 на поступивший запрос.',
+
+		'Error creating Symphony extension manager.' => 
+		'Ошибка запуска менеджера расширений',
+
+		'Settings for field %s could not be found in table tbl_fields_%s.' => 
+		'Настройки для поля %s не найдены в таблице tbl_fields_%s.',
+
+		'Unable to create path - %s' => 
+		'Не удалось создать - %s',
+
+		'Error creating field object with id %1$d, for filtering in data source %2$s. Check this field exists.' => 
+		'Ошибка создания поля объекта с ID %1$d для выполнения фильтрации в источнике данных %2$s. Проверьте наличие данного поля.',
+
+		'There was an error while trying to upload the file %1$s to the target directory %2$s.' => 
+		'Возникла ошибка при попытке загрузить файл %1$s в каталог %2$s.',
 
 	);
 
