@@ -7,7 +7,7 @@
 			'email' => 'info@alexbirukov.ru',
 			'website' => 'http://alexbirukov.ru'
 		),
-		'release-date' => '2013-10-02'
+		'release-date' => '2013-10-22'
 	);
 
 	/**
@@ -32,6 +32,9 @@
 
 		'%1$s released on %2$s' => 
 		'%1$s опубликовано на %2$s',
+
+		'%d entries' => 
+		'%d записей',
 
 		'%s Allow remote login via' => 
 		'%s Разрешить удаленный вход через',
@@ -161,6 +164,9 @@
 
 		'An Event with the name %s already exists' => 
 		'Событие с именем %s уже существует',
+
+		'An email containing a customised login link has been sent to %s. It will expire in 2 hours.' => 
+		'Письмо, содержащее ссылку для авторизации было отправлено на %s. Ссылка для авторизации будет действительна в течение 2 часов.',
 
 		'An empty result will be returned when this parameter does not have a value.' => 
 		'Если данный параметр не имеет значения будет возвращен пустой результат.',
@@ -311,6 +317,9 @@
 
 		'Children' => 
 		'Потомок',
+
+		'Collapse all fields' => 
+		'Свернуть все поля',
 
 		'Confirm Password' => 
 		'Подтвердите пароль',
@@ -525,6 +534,9 @@
 		'Email Address' => 
 		'Email адрес',
 
+		'Email Address or Username' => 
+		'Адрес эл. посты или имя пользователя',
+
 		'Email Gateway Error' => 
 		'Ошибка шлюза Email',
 
@@ -555,6 +567,9 @@
 		'Enforced type `%1$s` for argument `$%2$s` does not match any known variable types.' => 
 		'Указаный тип `%1$s` для аргумента `$%2$s` не совпадает ни с одним известным типом данных.',
 
+		'Enter your email address or username to be sent further instructions for logging in.' => 
+		'Укажите свой email или имя пользователя, чтобы получить инструкции по входу в систему.',
+
 		'Entries' => 
 		'Записи',
 
@@ -579,6 +594,12 @@
 		'Entry updated at %s.' => 
 		'Запись обновлена в %s.',
 
+		'Error creating Symphony extension manager.' => 
+		'Ошибка запуска менеджера расширений',
+
+		'Error creating field object with id %1$d, for filtering in data source %2$s. Check this field exists.' => 
+		'Ошибка создания поля объекта с ID %1$d для выполнения фильтрации в источнике данных %2$s. Проверьте наличие данного поля.',
+
 		'Essentials' => 
 		'Основное',
 
@@ -602,6 +623,9 @@
 
 		'Existing Values' => 
 		'Существующие значения',
+
+		'Expand all fields' => 
+		'Развернуть все поля',
 
 		'Extensions' => 
 		'Расширения',
@@ -777,11 +801,20 @@
 		'Last Seen' => 
 		'Последний визит',
 
+		'Last modified on %s' => 
+		'Последнее изменение %s',
+
 		'Last name is required' => 
 		'Укажите фамилию',
 
 		'Leave password fields blank to keep the current password' => 
 		'Оставьте поля пустыми, чтобы сохранить текущий пароль',
+
+		'Linked to %s in' => 
+		'Ссылается на %s в',
+
+		'Links in %s' => 
+		'Ссылок в %s',
 
 		'Log out' => 
 		'Выход',
@@ -797,6 +830,9 @@
 
 		'Malformed UTF-8 characters, possibly incorrectly encoded.' => 
 		'Неправильный UTF-8, возможно, неправильно закодирован.',
+
+		'Manager' => 
+		'Менеджер',
 
 		'Mar' => 
 		'Мар',
@@ -893,6 +929,9 @@
 
 		'No errors.' => 
 		'Ошибок нет.',
+
+		'No links in %s' => 
+		'Нет ссылок в %s',
 
 		'No password was entered.' => 
 		'Не указан пароль.',
@@ -1155,6 +1194,12 @@
 		'Set navigation group' => 
 		'Установить навигационную группу',
 
+		'Settings for field %s could not be found in table tbl_fields_%s.' => 
+		'Настройки для поля %s не найдены в таблице tbl_fields_%s.',
+
+		'Show Associations' => 
+		'Показать связанные',
+
 		'Show debug view' => 
 		'Показать окно отладчика',
 
@@ -1163,6 +1208,9 @@
 
 		'Show line %d in debug view' => 
 		'Показать строку %d в окне отлидчика',
+
+		'Show more entries' => 
+		'Показать больше записей',
 
 		'Sidebar' => 
 		'Боковая панель',
@@ -1217,6 +1265,9 @@
 
 		'Symphony Database Error' => 
 		'Ошибка БД Symphony',
+
+		'Symphony Extension Missing Error' => 
+		'Ошибка поиска расширения',
 
 		'Syntax error, malformed JSON.' => 
 		'Синтаксические ошибки при разборе JSON.',
@@ -1350,11 +1401,17 @@
 		'There was a problem whilst attempting to establish a database connection. Please check all connection information is correct.' => 
 		'Ошибка возникла при попытке соединения с базой данных. Проверьте параметры подключения к базе данных.',
 
+		'There was an error while trying to upload the file %1$s to the target directory %2$s.' => 
+		'Возникла ошибка при попытке загрузить файл %1$s в каталог %2$s.',
+
 		'There were some problems while attempting to save. Please check below for problem fields.' => 
 		'Возникли некоторые проблемы при сохранении. Проверьте внимательно все поля.',
 
 		'This document is not well formed.' => 
 		'Данный документ был сформирован неправильно.',
+
+		'This error occurred whilst attempting to resolve the 404 page for the original request.' => 
+		'Данная ошибка возникает в результате получения ответа 404 на поступивший запрос.',
 
 		'This event has been customised and cannot be viewed from Symphony.' => 
 		'Данное событие было изменено и не может быть просмотрено через Symphony.',
@@ -1416,6 +1473,9 @@
 		'Unable to connect via TLS' => 
 		'Не удалось подключиться через TLS',
 
+		'Unable to create path - %s' => 
+		'Не удалось создать - %s',
+
 		'Unable to find a Manager class for this resource.' => 
 		'Не удалось найти менеджер классов для данного ресурса.',
 
@@ -1442,6 +1502,9 @@
 
 		'Unexpected control character found.' => 
 		'Обнаружен некорректный символ.',
+
+		'Unfortunately no account was found using this information.' => 
+		'К сожалению, не найдено ни одной учётной записи, которая бы соответствовала указанным данным.',
 
 		'Uninstall' => 
 		'Удалить',
@@ -1779,6 +1842,9 @@
 		'twelfth' => 
 		'двенадцатый',
 
+		'unnamed' => 
+		'без названия',
+
 		'week' => 
 		'неделя',
 
@@ -1811,96 +1877,18 @@
 
 		'‘%s’ is a required field.' => 
 		'Поле ‘%s’ обязательно для заполнения.',
+		
+		'This Symphony instance has not been set up for emailing, %s' => 
+		'Данный экземляр Symphony не может использовать электронную почту %s',
 
-		// Obsolete
-
-		'An email containing a customised login link has been sent. It will expire in 2 hours.' => 
-		'Письмо содержащее ссылку для входа было отправлено. Срок действия ссылки истекает через два часа.',
-
-		'Click to expand or collapse a field.' => 
-		'Кликните для разворачинвания/сворачивания поля.',
-
-		'Double click to expand or collapse all fields.' => 
-		'Кликните два раза для разворачинвания/сворачивания всех полей.',
-
-		'Enter your email address to be sent further instructions for logging in.' => 
-		'Укажите свой email для получения дальнейших инстукций.',
-
-		'There was a problem locating your account. Please check that you are using the correct email address.' => 
-		'Ваш профиль не найден. Пожалуйста, убедитесь в правильности введенного адреса email.',
-
-		'unnamed' => 
-		'без названия',
-
-		'Expand all fields' => 
-		'Развернуть все поля',
-
-		'Collapse all fields' => 
-		'Свернуть все поля',
+		// Missing
 
 		'Sections' => 
 		false,
-
-		'Last modified on %s' => 
-		'Последнее изменение %s',
-
-		'An email containing a customised login link has been sent to %s. It will expire in 2 hours.' => 
-		'Письмо, содержащее ссылку для авторизации было отправлено на %s. Ссылка для авторизации будет действительна в течение 2 часов.',
-
-		'Enter your email address or username to be sent further instructions for logging in.' => 
-		'Укажите свой email или имя пользователя, чтобы получить инструкции по входу в систему.',
-
-		'Email Address or Username' => 
-		'Адрес эл. посты или имя пользователя',
-
-		'Unfortunately no account was found using this information.' => 
-		'К сожалению, не найдено ни одной учётной записи, которая бы соответствовала указанным данным.',
-
-		'Linked to %s in' => 
-		'Ссылается на %s в',
-
-		'Links in %s' => 
-		'Ссылок в %s',
-
-		'%d entries' => 
-		'%d записей',
-
-		'Show more entries' => 
-		'Показать больше записей',
-
-		'No links in %s' => 
-		'Нет ссылок в %s',
-
-		'Show Associations' => 
-		'Показать связанные',
-
-		'Manager' => 
-		'Менеджер',
-
-		'Symphony Extension Missing Error' => 
-		'Ошибка поиска расширения',
-
-		'This error occurred whilst attempting to resolve the 404 page for the original request.' => 
-		'Данная ошибка возникает в результате получения ответа 404 на поступивший запрос.',
-
-		'Error creating Symphony extension manager.' => 
-		'Ошибка запуска менеджера расширений',
-
-		'Settings for field %s could not be found in table tbl_fields_%s.' => 
-		'Настройки для поля %s не найдены в таблице tbl_fields_%s.',
-
-		'Unable to create path - %s' => 
-		'Не удалось создать - %s',
-
-		'Error creating field object with id %1$d, for filtering in data source %2$s. Check this field exists.' => 
-		'Ошибка создания поля объекта с ID %1$d для выполнения фильтрации в источнике данных %2$s. Проверьте наличие данного поля.',
-
-		'There was an error while trying to upload the file %1$s to the target directory %2$s.' => 
-		'Возникла ошибка при попытке загрузить файл %1$s в каталог %2$s.',
-
+		
 	);
 
-/**
+	/**
 	 * Transliterations
 	 */
 	$straight = array(
