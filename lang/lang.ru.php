@@ -1884,7 +1884,7 @@
 		// Missing
 
 		'Sections' => 
-		false,
+		'Схемы данных',
 		
 	);
 
