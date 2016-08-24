@@ -1,11 +1,11 @@
 lang_russian
 ============
 
-Перевод для CMS Symphony [Symphony](http://www.getsymphony.com) на русский язык.
+Перевод для CMS [Symphony](http://www.getsymphony.com) на русский язык.
 
 ## Автор
 
-- Бирюков Александр [Бирюков Александр](http://alexbirukov.ru) (info@alexbirukov.ru)
+- [Бирюков Александр](http://alexbirukov.ru) (info@alexbirukov.ru)
 
 ## Установка и обновление
 

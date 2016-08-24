@@ -7,7 +7,7 @@
 			'email' => 'info@alexbirukov.ru',
 			'website' => 'http://alexbirukov.ru'
 		),
-		'release-date' => '2016-07-07'
+		'release-date' => '2016-08-24'
 	);
 
 	/**
@@ -17,6 +17,9 @@
 
 		'$param' => 
 		'$param',
+
+		'$param:default' => 
+		'$param:default',
 
 		'%1$s &ndash; %2$s' => 
 		'%1$s &ndash; %2$s',
@@ -33,6 +36,12 @@
 		'%d entries' => 
 		'%d записей',
 
+		'%d of %d entries (filtered)' => 
+		'%d из %d записей (фильтрация)',
+
+		'%s ' => 
+		'%s ',
+
 		'%s Allow remote login via' => 
 		'%s Разрешить удаленный вход через',
 
@@ -47,6 +56,9 @@
 
 		'%s has timed out' => 
 		'%s таймаут превышен',
+
+		'%s is a reserved name used by the system and is not allowed for a field handle. Try using %s instead.' => 
+		'%s зарезервированное системой имя и не может быть испольовано. Попробуйте использовать другое имя %s.',
 
 		'&larr; Previous' => 
 		'&larr; Предыдущие',
@@ -63,8 +75,8 @@
 		'A Data source with the name %s already exists' => 
 		'Источник данных с именем <code>%s</code> уже существуют',
 
-		'A Utility with that name already exists. Please choose another.' => 
-		'Утилита с указаным уменем уже существует. Укажите другое имя.',
+		'A Section with the handle %s already exists' => 
+		'Раздел с указанным заголовком %s уже существует',
 
 		'A database error occurred while attempting to reorder.' => 
 		'При пересортировке в базеданных произошла ошибка.',
@@ -74,6 +86,12 @@
 
 		'A field with this handle already exists. All handle must be unique.' => 
 		'Поле с указаным именем уже существует. Имя должно быть уникальным.',
+
+		'A fully qualified domain name (FQDN) of your server, e.g. "www.example.com". If left empty, Symphony will attempt to find an IP address for the EHLO/HELO greeting.' => 
+		'Полное доменное имя (FQDN) вашего сервера, например "www.example.com". Если оставить поле пустым, то Symphony попытается самостоятельно определить адрес через EHLO/HELO.',
+
+		'A message must be supplied unless the alert is of type Alert::ERROR' => 
+		'Если сообщение имеет тип отличный от Alert::ERROR должно выводиться.',
 
 		'A new password has been requested for your account. Login using the following link, and change your password via the Authors area:' => 
 		'Поступил запрос на создание нового пароля для вашего аккаунта. Войдите в систему используя данную ссылку, и измените свой пароль в разделе для Авторов:',
@@ -92,6 +110,9 @@
 
 		'Access Denied' => 
 		'Доступ запрещён',
+
+		'Actions' => 
+		'Действия',
 
 		'Add field' => 
 		'Добавить поле',
@@ -116,6 +137,15 @@
 
 		'Allow Multiple' => 
 		'Разрешить множественный выбор',
+
+		'Allow filtering of section entries' => 
+		'Разрешить фильтрацию записей раздела',
+
+		'Allow selection of multiple authors' => 
+		'Разрешить множественное указание авторов',
+
+		'Allow selection of multiple options' => 
+		'Разрешить множественное выделение',
 
 		'An Event with the name %s already exists' => 
 		'Событие с именем %s уже существует',
@@ -147,6 +177,9 @@
 		'Apply' => 
 		'Применить',
 
+		'Apply filters' => 
+		'Применить фильтры',
+
 		'Apr' => 
 		'Апр',
 
@@ -164,9 +197,6 @@
 
 		'Are you sure you want to delete the selected sections?' => 
 		'Вы уверены, что хотите удалить раздел?',
-
-		'Are you sure you want to delete this Utility?' => 
-		'Вы уверены, что хотите удалить утилиту?',
 
 		'Are you sure you want to delete this author?' => 
 		'Вы уверены, что хотите удалить указанного автора?',
@@ -195,11 +225,20 @@
 		'Argument `$%1$s` is not of type `%2$s`, given `%3$s`.' => 
 		'Аргумент `$%1$s` имеет тип отличный от `%2$s`, укажите `%3$s`.',
 
+		'Association Editor' => 
+		'Связанный автор',
+
+		'Association Interface' => 
+		'Связанный интерфейс',
+
 		'At least one source must be specified, dynamic or static.' => 
 		'По крайней мере один динамический или статический источник даных должен быть определен.',
 
 		'Attach to Page' => 
 		'Присоединить к странице',
+
+		'Attach to Pages' => 
+		'Присоединить к страницам',
 
 		'Aug' => 
 		'Сентябрь',
@@ -237,11 +276,8 @@
 		'Blueprints' => 
 		'Структура',
 
-		'Body' => 
-		'Тело',
-
-		'Body is a required field.' => 
-		'Необходимо указать тело.',
+		'Can not add the element itself as one of its child' => 
+		'Невозможно добавить элемент, как собственного потомка',
 
 		'Can not call AUTH again.' => 
 		'Невозможно опять отправить AUTH',
@@ -267,11 +303,32 @@
 		'Children' => 
 		'Потомок',
 
-		'Collapse all fields' => 
-		'Свернуть все поля',
+		'Clear' => 
+		'Очистить',
+
+		'Clear filter' => 
+		'Очистить фильтр',
+
+		'Clear filters' => 
+		'Сбросить фильтры',
+
+		'Click to select' => 
+		'Нажмите для выбора',
+
+		'Collapse all' => 
+		'Свернуть все',
+
+		'Comparison mode' => 
+		'Режим сравнения',
+
+		'Conditions' => 
+		'Условия',
 
 		'Confirm Password' => 
 		'Подтвердите пароль',
+
+		'Confirmation' => 
+		'Подтверждение',
 
 		'Content' => 
 		'Контент',
@@ -321,9 +378,6 @@
 		'Create Section' => 
 		'Создать раздел',
 
-		'Create Utility' => 
-		'Создать утилиту',
-
 		'Create a new author' => 
 		'Добавить нового автора',
 
@@ -338,9 +392,6 @@
 
 		'Create a new page' => 
 		'Создать новую страницу',
-
-		'Create a new utility' => 
-		'Создать утилиту',
 
 		'Create a section' => 
 		'Создать раздел',
@@ -360,14 +411,29 @@
 		'Data Source' => 
 		'Источник данных',
 
+		'Data Source created at %s.' => 
+		'Источник данных создан %s.',
+
+		'Data Source updated at %s.' => 
+		'Источник данных обновлён %s.',
+
 		'Data Sources' => 
 		'Источники данных',
 
 		'Data returned is invalid.' => 
 		'Полученные данные некорректны.',
 
+		'Data source not executed, forbidden parameter was found.' => 
+		'Источник данных не выполнен т.к. был указан недопустимый параметр.',
+
+		'Data source not executed, required parameter is missing.' => 
+		'Источник данных не получен, не указан требуемый параметр.',
+
 		'Data source output grouping is not supported by the %s field' => 
 		'Вывод источника данных не поддерживает группировку по полю %s',
+
+		'DataSource' => 
+		'Источник данных',
 
 		'Database Error' => 
 		'Ошибка БД',
@@ -387,8 +453,14 @@
 		'Default Area' => 
 		'Начальная страница',
 
+		'Default Cache Settings' => 
+		'Настройки кэша по умолчанию',
+
 		'Default Email Settings' => 
 		'Стандартные параметры Email',
+
+		'Default date' => 
+		'Дата по умолчению',
 
 		'Delete' => 
 		'Удалить',
@@ -414,9 +486,6 @@
 		'Delete this section' => 
 		'Удалить раздел',
 
-		'Delete this utility' => 
-		'Удалить утилиту',
-
 		'Description' => 
 		'Описание',
 
@@ -437,6 +506,21 @@
 
 		'Disabled' => 
 		'Выключено',
+
+		'Discuss' => 
+		'Discuss',
+
+		'Display associations in entries table' => 
+		'Отображать смежные записи в таблице',
+
+		'Display in entries table' => 
+		'Отображать записи в таблице',
+
+		'Display time' => 
+		'Отображать время',
+
+		'Documentation' => 
+		'Документация',
 
 		'Dynamic Values' => 
 		'Динамические значения',
@@ -483,17 +567,29 @@
 		'Email: Sendmail' => 
 		'Email: Sendmail',
 
+		'Enable' => 
+		'Включить',
+
+		'Enable pagination' => 
+		'Включить пагинацию',
+
 		'Enabled' => 
 		'Включено',
 
 		'Enforced type `%1$s` for argument `$%2$s` does not match any known variable types.' => 
 		'Указаный тип `%1$s` для аргумента `$%2$s` не совпадает ни с одним известным типом данных.',
 
+		'Enter valid XML, exclude XML declaration' => 
+		'Введите валидный XML, исключая XML декларацию',
+
 		'Enter your email address or username to be sent further instructions for logging in.' => 
 		'Укажите свой email или имя пользователя, чтобы получить инструкции по входу в систему.',
 
 		'Entries' => 
 		'Записи',
+
+		'Entries per Page' => 
+		'Записей на странице',
 
 		'Entry [created | edited] successfully.' => 
 		'Запись [создана | отредактирована] успешно.',
@@ -525,6 +621,9 @@
 		'Essentials' => 
 		'Основное',
 
+		'Event' => 
+		'Событие',
+
 		'Event Filters add additional conditions or actions to an event.' => 
 		'Фильтр событий добавляет дополнительные условия или действия к событию.',
 
@@ -546,8 +645,8 @@
 		'Existing Values' => 
 		'Существующие значения',
 
-		'Expand all fields' => 
-		'Развернуть все поля',
+		'Expand all' => 
+		'Развернуть все',
 
 		'Extensions' => 
 		'Расширения',
@@ -588,11 +687,41 @@
 		'File chosen in ‘%s’ does not match allowable file types for that field.' => 
 		'Выбранный файл ‘%s’ не соответствует допустимым типам файлов для данного поля.',
 
+		'File chosen in ‘%s’ is blacklisted for that field.' => 
+		'Указанный файо ‘%s’ находится в чёрном списке данного поля.',
+
 		'File chosen in ‘%s’ was only partially uploaded due to an error.' => 
 		'Выбранный файл ‘%1$s’ превышает максимально допустимое значение размера %2$s, установленное в Symphony.',
 
+		'Filter Entries' => 
+		'Фильтрация записей',
+
 		'Filters' => 
 		'Фильтры',
+
+		'Find files that are an exact match for the given string.' => 
+		'Найти файлы, которые являются точным соответствием для данной строки.',
+
+		'Find files that do not match the given <a href="%s">MySQL regular expressions</a>.' => 
+		'Найти файлы, которые не попадают под <a href="%s">регулярное выражение MySQL</a>.',
+
+		'Find files that match the given <a href="%s">MySQL regular expressions</a>.' => 
+		'Найти файлы, которые попадают под <a href="%s">регулярное выражение MySQL</a>.',
+
+		'Find files that match the given mimetype.' => 
+		'Найти файлы, которые попадают под mime-типы.',
+
+		'Find files that match the given size.' => 
+		'Найти файлы, которые которые соответствуют размеру.',
+
+		'Find values that are an exact match for the given string.' => 
+		'Найти значения, которые являются точным соответствием для данной строки.',
+
+		'Find values that do not match the given <a href="%s">MySQL regular expressions</a>.' => 
+		'Найти значения, которые не попадают под <a href="%s">регулярное выражение MySQL</a>.',
+
+		'Find values that match the given <a href="%s">MySQL regular expressions</a>.' => 
+		'Найти значения, которые попадают под <a href="%s">регулярное выражение MySQL</a>.',
 
 		'First' => 
 		'Первый',
@@ -608,6 +737,9 @@
 
 		'Forbidden' => 
 		'Доступ запрещён',
+
+		'Forbidden Parameter' => 
+		'Недопустимый параметр',
 
 		'Formatting' => 
 		'Форматирование',
@@ -633,11 +765,23 @@
 		'General' => 
 		'Основные настройки',
 
+		'GitHub' => 
+		'GitHub',
+
 		'Go to page …' => 
 		'Перейти к странице ...',
 
 		'Group By' => 
 		'Группировать по',
+
+		'Grouping' => 
+		'Группировка',
+
+		'HELO Hostname' => 
+		'HELO Hostname',
+
+		'HTML-encode text' => 
+		'HTML-кодировка текста',
 
 		'Handle' => 
 		'URI имя',
@@ -647,6 +791,12 @@
 
 		'Hi %s,' => 
 		'Привет, %s',
+
+		'Hide this section from the back-end menu' => 
+		'Скрыть данный раздел из бэк-энд меню',
+
+		'Homepage' => 
+		'Домашняя страница',
 
 		'Host' => 
 		'Хост',
@@ -660,8 +810,14 @@
 		'Ignore?' => 
 		'Игнорировать?',
 
+		'Include a count of entries in associated sections' => 
+		'Включить количество записей во сложенном разделе',
+
 		'Included Elements' => 
 		'Подключенные элементы',
+
+		'Install' => 
+		'Установить',
 
 		'Invalid URL' => 
 		'Неверный URL',
@@ -671,6 +827,9 @@
 
 		'Invalid timezone %s' => 
 		'Неверный часовой пояс %s',
+
+		'Issues' => 
+		'Замечания',
 
 		'It currently does not work with ‘Allow Multiple’' => 
 		'Работа с ‘Allow Multiple’ пока невозможна',
@@ -723,8 +882,14 @@
 		'Leave password fields blank to keep the current password' => 
 		'Оставьте поля пустыми, чтобы сохранить текущий пароль',
 
+		'Leaving these fields empty will always execute the data source.' => 
+		'Оставьте данное поле пустым, чтобы источник данных выполнялся всегда.',
+
 		'Linked to %s in' => 
 		'Ссылается на %s в',
+
+		'Links' => 
+		'Ссылки',
 
 		'Links in %s' => 
 		'Ссылок в %s',
@@ -740,6 +905,9 @@
 
 		'Main content' => 
 		'Основная панель',
+
+		'Make this a required field' => 
+		'Сделать обязательным полем',
 
 		'Malformed UTF-8 characters, possibly incorrectly encoded.' => 
 		'Неправильный UTF-8, возможно, неправильно закодирован.',
@@ -792,9 +960,6 @@
 		'Name' => 
 		'Имя',
 
-		'Name is a required field.' => 
-		'Необходимо указать имя.',
-
 		'Navigation' => 
 		'Навигация',
 
@@ -816,6 +981,9 @@
 		'No' => 
 		'Нет',
 
+		'No Suggestions' => 
+		'Нет предложений',
+
 		'No attachments or body text was set. Can not send empty email.' => 
 		'Нет текста письма или вложений. Пустое письмо не может быть отправлено.',
 
@@ -827,6 +995,9 @@
 
 		'No errors.' => 
 		'Ошибок нет.',
+
+		'No filters applied yet.' => 
+		'Нет применённых фильтров',
 
 		'No links in %s' => 
 		'Нет ссылок в %s',
@@ -851,6 +1022,12 @@
 
 		'None found.' => 
 		'Не найден',
+
+		'Not installed' => 
+		'Не установлено',
+
+		'Notice that it is possible to get mixtures of success and failure messages when using the ‘Allow Multiple’ option.' => 
+		'Обратите внимание, что при использовании опции ‘Разрешить множественное выделение’ могут появляться смешанные сообщение ошибок и успешных операций.',
 
 		'Nov' => 
 		'Нояб',
@@ -882,6 +1059,9 @@
 		'Optional' => 
 		'Опционально',
 
+		'Options' => 
+		'Опции',
+
 		'Page %1$s of %2$s' => 
 		'Страница %1$s из %2$s',
 
@@ -890,6 +1070,9 @@
 
 		'Page Not Found' => 
 		'Страница не найдена',
+
+		'Page Number' => 
+		'Номер страницы',
 
 		'Page Resources' => 
 		'Ресурсы страницы',
@@ -918,6 +1101,9 @@
 		'Pages' => 
 		'Страницы',
 
+		'Pagination' => 
+		'Пагинация',
+
 		'Parameters' => 
 		'Параметры',
 
@@ -942,14 +1128,23 @@
 		'Please check permissions on %s.' => 
 		'Проверьте права на %s.',
 
+		'Please confirm changes to this author with your password.' => 
+		'Подтвердите сохранение изменений для данного автора со своим паролем.',
+
 		'Please ensure handle contains at least one Latin-based character.' => 
 		'Удостоверьтесь, что адрес страницы содержит только латинские символы.',
 
 		'Please ensure name contains at least one Latin-based character.' => 
 		'Проверьте, что имя содержит только латинские символы.',
 
+		'Please go back and try again.' => 
+		'Пожалуйста вернитесь и попробуйте снова.',
+
 		'Please login to view this page.' => 
 		'Авторизуйтесь для доступа к странице.',
+
+		'Please provide your own password to make changes to this author.' => 
+		'Укажите ваш собственный пароль для внесения изменений для данного автора.',
 
 		'Please remove it from your fields prior to uninstalling or disabling.' => 
 		'Перед удалением, удалите его из всех разделов.',
@@ -960,6 +1155,9 @@
 		'Please remove it from your sections prior to uninstalling or disabling.' => 
 		'Перед удалением, удалите его из всех разделов.',
 
+		'Please reset your password' => 
+		'Пожалуйста, сбросьте ваш пароль',
+
 		'Port' => 
 		'Порт',
 
@@ -969,11 +1167,23 @@
 		'Preferences saved.' => 
 		'Настройки сохранены',
 
+		'Recipient address can not contain carriage return or newlines.' => 
+		'Адреса получателей не могут содержать символы переноса и новой строки.',
+
 		'Recipient email address cannot be empty.' => 
 		'Адрес получаетеля не может быть пустым.',
 
 		'Recipient not found' => 
 		'Получатель не найден',
+
+		'Redirect to 404 page when no results are found' => 
+		'Переадресовывать на страницу 404 когда отсутствуют результаты',
+
+		'Redirect to 404 page when the forbidden parameter is present' => 
+		'Переадресовывать на страницу 404 когда присутствует недопустимый параметр',
+
+		'Redirect to 404 page when the required parameter is not present' => 
+		'Переадресовывать на страницу 404 когда отсутствует необходимый параметр',
 
 		'Remove File' => 
 		'Удалить файл',
@@ -1005,6 +1215,12 @@
 		'Request timed out. %d second limit reached.' => 
 		'Время запроса истекло. Превышен лимит %d секунд.',
 
+		'Request was rejected for having an invalid cross-site request forgery token.' => 
+		'Запрос был отклонён т.к. имется признаки CSS атаки.',
+
+		'Required Parameter' => 
+		'Требуется параметр',
+
 		'Retrieve password?' => 
 		'Восстановить пароль?',
 
@@ -1023,17 +1239,44 @@
 		'Save Changes' => 
 		'Сохранить',
 
+		'Search for {$item}' => 
+		'Поиск {$item}',
+
 		'Section created at %s.' => 
 		'Раздел создан в %s.',
 
 		'Section updated at %s.' => 
 		'Раздел обновлён в %s.',
 
+		'Sections' => 
+		'Разделы',
+
 		'Sections Index' => 
 		'Список разделов',
 
+		'Select ' => 
+		'Выбрать ',
+
+		'Select %s Extension' => 
+		'Выберите %s расширение',
+
+		'Select Author %s' => 
+		'Выбран автор %s',
+
 		'Select Box' => 
 		'Select Box',
+
+		'Select Entry %d' => 
+		'Выбрано записей %d',
+
+		'Select Page %s' => 
+		'Выберите страницу %s',
+
+		'Select Section %s' => 
+		'Выберите раздел %s',
+
+		'Select current user by default' => 
+		'Выбрать текущего пользователя по умолчению',
 
 		'Send Email' => 
 		'Отправить Email',
@@ -1071,6 +1314,9 @@
 		'Show Associations' => 
 		'Показать связанные',
 
+		'Show calendar' => 
+		'Пказать календарь',
+
 		'Show debug view' => 
 		'Показать окно отладчика',
 
@@ -1101,17 +1347,29 @@
 		'Sort Order' => 
 		'Порядок сортировки',
 
+		'Sort all options alphabetically' => 
+		'Сортировать в алфавитном порядке',
+
 		'Sort by %1$s %2$s' => 
 		'Соритровать по %1$s %2$s',
 
+		'Sorting' => 
+		'Сортировка',
+
 		'Source' => 
 		'Источник',
+
+		'Static Values' => 
+		'Статическое значение',
 
 		'Static XML' => 
 		'Статический XML',
 
 		'Status' => 
 		'Статус',
+
+		'Status unavailable' => 
+		'Статус недоступен',
 
 		'Submit' => 
 		'Принять',
@@ -1167,6 +1425,9 @@
 		'Take me to the login page' => 
 		'Перейти на страницу авторизации',
 
+		'Target' => 
+		'Цель',
+
 		'Template' => 
 		'Шаблон',
 
@@ -1209,11 +1470,26 @@
 		'The Symphony Team' => 
 		'Команда Symphony',
 
+		'The Symphony calendar widget has been disabled because your system date format is currently not supported. Try one of the following instead or disable the calendar in the field settings:' => 
+		'Виджет календаря Symphony был отключен т.к. формат даты вашей системы не поддерживается. Попробуйте вместо этого использовать один из следующих вариантов или отключить календарь в настройках:',
+
+		'The Symphony configuration file, %s, is not writable. The sort order cannot be modified.' => 
+		'Файл конфигурации Symphony %s не доступен для записи. Порядок сортировки не может быть изменён.',
+
+		'The Symphony configuration file, %s, or folder is not writable. You will not be able to save changes to preferences.' => 
+		'Файл конфигурации Symphony, %s, или каталог не доступен для записи. Вы не сможете сохранить изменения в настройках.',
+
 		'The Text Formatter ‘%s’, provided by the Extension ‘%s’, is currently in use.' => 
 		'Парсер текста ‘%s’, предоставляется расширением ‘%s’, которое в данный момент используется.',
 
 		'The author profile you requested does not exist.' => 
 		'Профиль запрошенного атвора не существует.',
+
+		'The content of the file `%s` could not be loaded.' => 
+		'Содержимое файла `%s` не может быть загружено.',
+
+		'The data will only be available on the selected pages.' => 
+		'Данные будут доступны только на выбранных страницах.',
 
 		'The date specified in ‘%s’ is invalid.' => 
 		'Даныне переданые в ‘%s’ некорректны.',
@@ -1226,6 +1502,9 @@
 
 		'The email address ‘%s’ is invalid.' => 
 		'Неверный email ‘%s’.',
+
+		'The event will only be available on the selected pages.' => 
+		'События будут доступны только на выбранных страницах.',
 
 		'The field ‘%s’, provided by the Extension ‘%s’, is currently in use.' => 
 		'Поле ‘%s’, предоставляется расширением ‘%s’, которое в данный момент используется.',
@@ -1259,6 +1538,9 @@
 
 		'There is already a field of type %s. There can only be one per section.' => 
 		'Поле типа %s уже существует. В разделе возможно наличие только одного поля такого типа.',
+
+		'There was a problem rendering this page. Please check the activity log for more details.' => 
+		'Возникли проблемы с отображением страницы. Для получения более подробной информации см. логи.',
 
 		'There was a problem whilst attempting to establish a database connection. Please check all connection information is correct.' => 
 		'Ошибка возникла при попытке соединения с базой данных. Проверьте параметры подключения к базе данных.',
@@ -1296,6 +1578,9 @@
 		'This page could not be rendered due to the following XSLT processing errors:' => 
 		'Данная страница не может быть обработана из-за ошибок XSLT:',
 
+		'This request exceeds the maximum allowed request size of %s specified by your host.' => 
+		'Этот запрос превышает максимально допустимый размер запроса %s определённого хостом.',
+
 		'Thu' => 
 		'Чт.',
 
@@ -1319,6 +1604,12 @@
 
 		'Type' => 
 		'Тип',
+
+		'Type and hit enter to apply filter…' => 
+		'Введите значение для фильтрации...',
+
+		'Type to search' => 
+		'Введите текст для поиска',
 
 		'URL' => 
 		'URL',
@@ -1398,6 +1689,12 @@
 		'Untitled Field' => 
 		'Поле без названия',
 
+		'Update' => 
+		'Обновить',
+
+		'Update available' => 
+		'Доступно обновление',
+
 		'Uploading ‘%s’ failed. Could not write temporary file to disk.' => 
 		'Загрузка ‘%s’ завершилась неудачно. Неудаётся записать временный файл на диск.',
 
@@ -1407,8 +1704,14 @@
 		'Upon the event successfully saving the entry, this option takes input from the form and send an email to the desired recipient.' => 
 		'В случае успешного сохранения записи, данная опция позволит получить данные из формы и отправить их на почту заданному получателю.',
 
+		'Use %s syntax to filter by page parameters. A default value can be set using %s.' => 
+		'Используйте синтаксис %s для фильтрации по параметрам страницы. Значения по умолчанию %s.',
+
 		'Use %s syntax to limit by page parameters.' => 
 		'Используйте синтаксис %s, чтобы ограничить количество параметров страницы.',
+
+		'Use %s syntax to order by page parameters.' => 
+		'Используйте синтаксис %s для сортировки параметров страницы.',
 
 		'User Type' => 
 		'Тип пользователя',
@@ -1422,23 +1725,14 @@
 		'Username is required' => 
 		'Укажите имя пользователя',
 
-		'Utilities' => 
-		'Утилиты',
-
 		'Utility' => 
 		'Утилита',
 
-		'Utility could not be written to disk.' => 
-		'Утилита не может быть записана на диск.',
-
-		'Utility created at %s.' => 
-		'Утилита создана в %s.',
-
-		'Utility updated at %s.' => 
-		'Утилита была обновлена в %s.',
-
 		'Validation Rule' => 
 		'Правило валидации',
+
+		'Validation rule is not a valid regular expression' => 
+		'Регулярное выражение для правила валидации неверно',
 
 		'Value' => 
 		'Значение',
@@ -1461,6 +1755,9 @@
 		'View all Authors' => 
 		'Показать всех авторов',
 
+		'View all Data Sources' => 
+		'Отобразить все источники данных',
+
 		'View all Entries' => 
 		'Все записи',
 
@@ -1472,9 +1769,6 @@
 
 		'View all Sections' => 
 		'Все разделы',
-
-		'View all Utilities' => 
-		'Все утилиты',
 
 		'View extensions' => 
 		'Посмотреть расширения',
@@ -1491,11 +1785,20 @@
 		'Wednesday' => 
 		'Среда',
 
+		'When an error occurs during saving, due to either missing or invalid fields, the following XML will be returned.' => 
+		'Во время сохранения возникли проблемы, отсутствуют или потеряны значения полей, поэтому текущий XML будет возвращён.',
+
 		'When saved successfully, the following XML will be returned:' => 
 		'При успешном сохранении будет возвращен следующий XML:',
 
+		'Wiki' => 
+		'Wiki',
+
 		'With Selected...' => 
 		'С выбранными...',
+
+		'Wrong password, please enter your own password to make changes to this author.' => 
+		'Неверный пароль, пожалуйста, проверьте ваш пароль для сохранения изменений для данного автора.',
 
 		'Wrong password. Enter old one to change email address.' => 
 		'Неверный пароль. Укажите старый пароль для изменение email адреса.',
@@ -1523,6 +1826,9 @@
 
 		'You cannot remove yourself as you are the active Author.' => 
 		'Вы не можете удалить сами себя, т.к. вы являетесь текущим автором.',
+
+		'Your Password' => 
+		'Ваш пароль',
 
 		'Your Symphony installation is up to date, but the installer was still detected. For security reasons, it should be removed.' => 
 		'Ваша система Symphony уже установлена, но установщик не удалён. По соображениям безопасности его следует удалить.',
@@ -1554,6 +1860,9 @@
 		'descending' => 
 		'по убыванию',
 
+		'drag to reorder' => 
+		'перетащите для сортировки',
+
 		'eighth' => 
 		'восьмой',
 
@@ -1562,6 +1871,9 @@
 
 		'fifth' => 
 		'пятый',
+
+		'filtered' => 
+		'фильтрация',
 
 		'first' => 
 		'первый',
@@ -1620,14 +1932,29 @@
 		'ninth' => 
 		'девятый',
 
+		'no leading zero' => 
+		'не может начинаться с нуля',
+
 		'no leading zeros' => 
 		'без нулей',
 
 		'now' => 
 		'сейчас',
 
+		'optional, accepts absolute or relative dates' => 
+		'опционально, возможны абсолютные или относительные даты',
+
 		'previous' => 
 		'предыдущий',
+
+		'read only' => 
+		'только чтение',
+
+		'required' => 
+		'требуется',
+
+		'requires Symphony %s' => 
+		'требуется Symphony %s',
 
 		'sec' => 
 		'сек',
@@ -1665,7 +1992,7 @@
 		'twelfth' => 
 		'двенадцатый',
 
-		'unnamed' => 
+		'untitled' => 
 		'без названия',
 
 		'week' => 
@@ -1692,6 +2019,9 @@
 		'{$minutes} minutes ago' => 
 		'{$minutes} минут(ы) назад',
 
+		'{$param}' => 
+		'{$param}',
+
 		'‘%s’ contains invalid XML.' => 
 		'‘%s’ содержит невелидный XML код.',
 
@@ -1700,384 +2030,6 @@
 
 		'‘%s’ is a required field.' => 
 		'Поле ‘%s’ обязательно для заполнения.',
-
-		'untitled' => 
-		'без названия',
-
-		'Expand all' => 
-		'Развернуть все',
-
-		'Collapse all' => 
-		'Свернуть все',
-
-		'drag to reorder' => 
-		'перетащите для сортировки',
-
-		'Please reset your password' => 
-		'Пожалуйста, сбросьте ваш пароль',
-
-		'required' => 
-		'требуется',
-
-		'Click to select' => 
-		'Нажмите для выбора',
-
-		'Type to search' => 
-		'Введите текст для поиска',
-
-		'Clear' => 
-		'Очистить',
-
-		'Search for {$item}' => 
-		'Поиск {$item}',
-
-		'filtered' => 
-		'фильтрация',
-
-		'Clear filters' => 
-		'Сбросить фильтры',
-
-		'Apply filters' => 
-		'Применить фильтры',
-
-		'The Symphony calendar widget has been disabled because your system date format is currently not supported. Try one of the following instead or disable the calendar in the field settings:' => 
-		'Виджет календаря Symphony был отключен т.к. формат даты вашей системы не поддерживается. Попробуйте вместо этого использовать один из следующих вариантов или отключить календарь в настройках:',
-
-		'no leading zero' => 
-		'не может начинаться с нуля',
-
-		'Enable' => 
-		'Включить',
-
-		'Install' => 
-		'Установить',
-
-		'Update' => 
-		'Обновить',
-
-		'Documentation' => 
-		'Документация',
-
-		'When an error occurs during saving, due to either missing or invalid fields, the following XML will be returned.' => 
-		'Во время сохранения возникли проблемы, отсутствуют или потеряны значения полей, поэтому текущий XML будет возвращён.',
-
-		'Notice that it is possible to get mixtures of success and failure messages when using the ‘Allow Multiple’ option.' => 
-		'Обратите внимание, что при использовании опции ‘Разрешить множественное выделение’ могут появляться смешанные сообщение ошибок и успешных операций.',
-
-		'Data Source updated at %s.' => 
-		'Источник данных обновлён %s.',
-
-		'Data Source created at %s.' => 
-		'Источник данных создан %s.',
-
-		'View all Data Sources' => 
-		'Отобразить все источники данных',
-
-		'Sections' => 
-		'Разделы',
-
-		'Conditions' => 
-		'Условия',
-
-		'Leaving these fields empty will always execute the data source.' => 
-		'Оставьте данное поле пустым, чтобы источник данных выполнялся всегда.',
-
-		'Required Parameter' => 
-		'Требуется параметр',
-
-		'Forbidden Parameter' => 
-		'Недопустимый параметр',
-
-		'Redirect to 404 page when the required parameter is not present' => 
-		'Переадресовывать на страницу 404 когда отсутствует необходимый параметр',
-
-		'Redirect to 404 page when the forbidden parameter is present' => 
-		'Переадресовывать на страницу 404 когда присутствует недопустимый параметр',
-
-		'Redirect to 404 page when no results are found' => 
-		'Переадресовывать на страницу 404 когда отсутствуют результаты',
-
-		'Use %s syntax to filter by page parameters. A default value can be set using %s.' => 
-		'Используйте синтаксис %s для фильтрации по параметрам страницы. Значения по умолчанию %s.',
-
-		'$param:default' => 
-		'$param:default',
-
-		'Sorting' => 
-		'Сортировка',
-
-		'Use %s syntax to order by page parameters.' => 
-		'Используйте синтаксис %s для сортировки параметров страницы.',
-
-		'{$param}' => 
-		'{$param}',
-
-		'Grouping' => 
-		'Группировка',
-
-		'Pagination' => 
-		'Пагинация',
-
-		'Entries per Page' => 
-		'Записей на странице',
-
-		'Page Number' => 
-		'Номер страницы',
-
-		'Enable pagination' => 
-		'Включить пагинацию',
-
-		'Include a count of entries in associated sections' => 
-		'Включить количество записей во сложенном разделе',
-
-		'HTML-encode text' => 
-		'HTML-кодировка текста',
-
-		'Enter valid XML, exclude XML declaration' => 
-		'Введите валидный XML, исключая XML декларацию',
-
-		'Attach to Pages' => 
-		'Присоединить к страницам',
-
-		'The data will only be available on the selected pages.' => 
-		'Данные будут доступны только на выбранных страницах.',
-
-		'Target' => 
-		'Цель',
-
-		'The event will only be available on the selected pages.' => 
-		'События будут доступны только на выбранных страницах.',
-
-		'Select Page %s' => 
-		'Выберите страницу %s',
-
-		'Select Section %s' => 
-		'Выберите раздел %s',
-
-		'A Section with the handle %s already exists' => 
-		'Раздел с указанным заголовком %s уже существует',
-
-		'Options' => 
-		'Опции',
-
-		'Hide this section from the back-end menu' => 
-		'Скрыть данный раздел из бэк-энд меню',
-
-		'Allow filtering of section entries' => 
-		'Разрешить фильтрацию записей раздела',
-
-		'Filter Entries' => 
-		'Фильтрация записей',
-
-		'Clear filter' => 
-		'Очистить фильтр',
-
-		'No filters applied yet.' => 
-		'Нет применённых фильтров',
-
-		'Type and hit enter to apply filter…' => 
-		'Введите значение для фильтрации...',
-
-		'Comparison mode' => 
-		'Режим сравнения',
-
-		'This request exceeds the maximum allowed request size of %s specified by your host.' => 
-		'Этот запрос превышает максимально допустимый размер запроса %s определённого хостом.',
-
-		'The Symphony configuration file, %s, is not writable. The sort order cannot be modified.' => 
-		'Файл конфигурации Symphony %s не доступен для записи. Порядок сортировки не может быть изменён.',
-
-		'%d of %d entries (filtered)' => 
-		'%d из %d записей (фильтрация)',
-
-		'Select Entry %d' => 
-		'Выбрано записей %d',
-
-		'Select Author %s' => 
-		'Выбран автор %s',
-
-		'Confirmation' => 
-		'Подтверждение',
-
-		'Please confirm changes to this author with your password.' => 
-		'Подтвердите сохранение изменений для данного автора со своим паролем.',
-
-		'Your Password' => 
-		'Ваш пароль',
-
-		'Please provide your own password to make changes to this author.' => 
-		'Укажите ваш собственный пароль для внесения изменений для данного автора.',
-
-		'Wrong password, please enter your own password to make changes to this author.' => 
-		'Неверный пароль, пожалуйста, проверьте ваш пароль для сохранения изменений для данного автора.',
-
-		'Links' => 
-		'Ссылки',
-
-		'Select %s Extension' => 
-		'Выберите %s расширение',
-
-		'Status unavailable' => 
-		'Статус недоступен',
-
-		'Not installed' => 
-		'Не установлено',
-
-		'Update available' => 
-		'Доступно обновление',
-
-		'requires Symphony %s' => 
-		'требуется Symphony %s',
-
-		'GitHub' => 
-		'GitHub',
-
-		'Discuss' => 
-		'Discuss',
-
-		'Homepage' => 
-		'Домашняя страница',
-
-		'Wiki' => 
-		'Wiki',
-
-		'Issues' => 
-		'Замечания',
-
-		'The Symphony configuration file, %s, or folder is not writable. You will not be able to save changes to preferences.' => 
-		'Файл конфигурации Symphony, %s, или каталог не доступен для записи. Вы не сможете сохранить изменения в настройках.',
-
-		'Default Cache Settings' => 
-		'Настройки кэша по умолчанию',
-
-		'There was a problem rendering this page. Please check the activity log for more details.' => 
-		'Возникли проблемы с отображением страницы. Для получения более подробной информации см. логи.',
-
-		'A message must be supplied unless the alert is of type Alert::ERROR' => 
-		'Если сообщение имеет тип отличный от Alert::ERROR должно выводиться.',
-
-		'Data source not executed, forbidden parameter was found.' => 
-		'Источник данных не выполнен т.к. был указан недопустимый параметр.',
-
-		'Recipient address can not contain carriage return or newlines.' => 
-		'Адреса получателей не могут содержать символы переноса и новой строки.',
-
-		'The content of the file `%s` could not be loaded.' => 
-		'Содержимое файла `%s` не может быть загружено.',
-
-		'Association Interface' => 
-		'Связанный интерфейс',
-
-		'Association Editor' => 
-		'Связанный автор',
-
-		'Make this a required field' => 
-		'Сделать обязательным полем',
-
-		'Display in entries table' => 
-		'Отображать записи в таблице',
-
-		'Display associations in entries table' => 
-		'Отображать смежные записи в таблице',
-
-		'%s is a reserved name used by the system and is not allowed for a field handle. Try using %s instead.' => 
-		'%s зарезервированное системой имя и не может быть испольовано. Попробуйте использовать другое имя %s.',
-
-		'Validation rule is not a valid regular expression' => 
-		'Регулярное выражение для правила валидации неверно',
-
-		'Find values that are an exact match for the given string.' => 
-		'Найти значения, которые являются точным соответствием для данной строки.',
-
-		'Find values that match the given <a href="%s">MySQL regular expressions</a>.' => 
-		'Найти значения, которые попадают под <a href="%s">регулярное выражение MySQL</a>.',
-
-		'Find values that do not match the given <a href="%s">MySQL regular expressions</a>.' => 
-		'Найти значения, которые не попадают под <a href="%s">регулярное выражение MySQL</a>.',
-
-		'Event' => 
-		'Событие',
-
-		'DataSource' => 
-		'Источник данных',
-
-		'read only' => 
-		'только чтение',
-
-		'Select ' => 
-		'Выбрать ',
-
-		'%s ' => 
-		'%s ',
-
-		'Actions' => 
-		'Действия',
-
-		'Can not add the element itself as one of its child' => 
-		'Невозможно добавить элемент, как собственного потомка',
-
-		'Request was rejected for having an invalid cross-site request forgery token.' => 
-		'Запрос был отклонён т.к. имется признаки CSS атаки.',
-
-		'Please go back and try again.' => 
-		'Пожалуйста вернитесь и попробуйте снова.',
-
-		'Data source not executed, required parameter is missing.' => 
-		'Источник данных не получен, не указан требуемый параметр.',
-
-		'HELO Hostname' => 
-		'HELO Hostname',
-
-		'A fully qualified domain name (FQDN) of your server, e.g. "www.example.com". If left empty, Symphony will attempt to find an IP address for the EHLO/HELO greeting.' => 
-		'Полное доменное имя (FQDN) вашего сервера, например "www.example.com". Если оставить поле пустым, то Symphony попытается самостоятельно определить адрес через EHLO/HELO.',
-
-		'Allow selection of multiple authors' => 
-		'Разрешить множественное указание авторов',
-
-		'Select current user by default' => 
-		'Выбрать текущего пользователя по умолчению',
-
-		'Default date' => 
-		'Дата по умолчению',
-
-		'optional, accepts absolute or relative dates' => 
-		'опционально, возможны абсолютные или относительные даты',
-
-		'Display time' => 
-		'Отображать время',
-
-		'Show calendar' => 
-		'Пказать календарь',
-
-		'Static Values' => 
-		'Статическое значение',
-
-		'Allow selection of multiple options' => 
-		'Разрешить множественное выделение',
-
-		'Sort all options alphabetically' => 
-		'Сортировать в алфавитном порядке',
-
-		'No Suggestions' => 
-		'Нет предложений',
-
-		'Find files that are an exact match for the given string.' => 
-		'Найти файлы, которые являются точным соответствием для данной строки.',
-
-		'Find files that match the given <a href="%s">MySQL regular expressions</a>.' => 
-		'Найти файлы, которые попадают под <a href="%s">регулярное выражение MySQL</a>.',
-
-		'Find files that do not match the given <a href="%s">MySQL regular expressions</a>.' => 
-		'Найти файлы, которые не попадают под <a href="%s">регулярное выражение MySQL</a>.',
-
-		'Find files that match the given mimetype.' => 
-		'Найти файлы, которые попадают под mime-типы.',
-
-		'Find files that match the given size.' => 
-		'Найти файлы, которые которые соответствуют размеру.',
-
-		'File chosen in ‘%s’ is blacklisted for that field.' => 
-		'Указанный файо ‘%s’ находится в чёрном списке данного поля.',
 
 	);
 

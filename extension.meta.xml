@@ -14,6 +14,10 @@
 		</author>
 	</authors>
 	<releases>
+		<release version="0.6" date="2016-08-24" min="2.6.7" >
+			- Removed obsolete transfer lines.
+			- Update Readme.md.
+		</release>
 		<release version="0.5" date="2016-07-07" min="2.6.7" >
 			- Update russian language file for Symphony 2.6.7.
 		</release>
